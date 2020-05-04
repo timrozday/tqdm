@@ -16,11 +16,6 @@ import os
 #          " Use `tqdm.tqdm` instead to force console mode"
 #          " (e.g. in jupyter console)", TqdmExperimentalWarning, stacklevel=2)
     
-from .notebook import tqdm, trange
-from .std import TqdmExperimentalWarning
-from warnings import warn
-warn("Using `tqdm.autonotebook.tqdm` in notebook mode."
-     " Use `tqdm.tqdm` instead to force console mode"
-     " (e.g. in jupyter console)", TqdmExperimentalWarning, stacklevel=2)
+from .std import tqdm, trange
     
 __all__ = ["tqdm", "trange"]
